@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Health Ordering</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="..//HW Less_7 example BEM /scripts/scriptAgree.js"></script>
+</head>
+
+<body>
+    <main>
+        <!-- header START -->
+        <header>
+            <div class="wrap__header">
+                <div class="container__header">
+                    <div class="container__header-inner">
+                        <div class="header__logo-img">
+                            <img class="logo__img" src="..//HW Less_7 example BEM /img/logo.png" alt="logo">
+                        </div>
+                        <div class="header__nav">
+                            <ul class="header__nav-list">
+                                <li><a href="#">Сatalog</a></li>
+                                <li><a href="#">Teaching</a></li>
+                                <li><a href="#">For partners</a></li>
+                                <li><a href="#">Promotions</a></li>
+                            </ul>
+                        </div>
+                        <div class="icons">
+                            <ul class="icons__list">
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/loupe.png" alt="loupe"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/user.png" alt="user"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/shopping-bag.png" alt="bag"></a></li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                    <div class="header__nav-visual">
+                        <ul class="header__nav___visual-list">
+                            <li><a href="#"><img src="..//HW Less_7 example BEM /img/Vector.svg" alt="home" class="home__nav-img"></a></li>
+                            <li><img src="..//HW Less_7 example BEM /img/Arrow.svg" alt="arrow" class="nav__visual-arrow"></li>
+                            <li><a href="#">level 1 page</a></li>
+                            <li><img src="..//HW Less_7 example BEM /img/Arrow.svg" alt="arrow" class="nav__visual-arrow"></li>
+                            <li><a href="#">level 2 page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header END -->
+        <section class="container">
+            <h2 class="title">Process order</h2>
+            <div class="section__info">
+                <!-- Block info auth START -->
+                <div class="auth">
+                    <h3 class="auth__title">Login or register</h3>
+                    <div class="auth__radio-group">
+                        <div class="auth__radio-btn">
+                            <input type="radio" name="log_reg" checked id="log" value="Login" />
+                            <label class="auth__radio-btn-label" for="log">Login</label>
+                        </div>
+                        <div class="auth__radio-btn">
+                            <input type="radio" name="log_reg" checked id="reg" value="Register" />
+                            <label class="auth__radio-btn-label" for="log">Register</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block info auth END -->
+                <!-- Block delivery START-->
+                <div class="section__delivery">
+                    <div class="delivery">
+                        <h4 class="delivery__title">Delivery Options</h4>
+                        <div class="delivery__radio-group">
+                            <div class="delivery__radio-btn">
+                                <input type="radio" name="delivery" id="post" value="Post" />
+                                <Label class="delivery__radio-btn-label" for="post">Post</Label>
+                            </div>
+                            <div class="delivery__radio-btn">
+                                <input type="radio" name="delivery" checked id="pickup" value="Pickup" />
+                                <Label class="delivery__radio-btn-label" for="pickup">Pickup</Label>
+                            </div>
+                            <div class="delivery__radio-btn">
+                                <input type="radio" name="delivery" id="courier" value="Courier" />
+                                <Label class="delivery__radio-btn-label" for="courier">Courier</Label> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block delivery END-->
+            </div>
+            <div class="section__info">
+                <!-- Block info about user START -->
+                <div class="user__data">
+                    <h3 class="user__data-title">Personal data</h3>
+                    <div class="user__data-group">
+                        <p>Your name</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="15" name="name" placeholder="Morgan" />
+                        </div>
+                        <p>Your second name</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="20" name="second__name" placeholder="Freeman" />
+                        </div>
+                        <p>Mail</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="25" name="email" placeholder="freeman@gmail.com" />
+                        </div>
+                        <p>Phone number</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="11" name="tel" placeholder="+421(944)333-333" />
+                        </div>
+                        <p>Additional contact</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="11" name="contact" placeholder="Viber, WhatsApp, Telegram" />
+                        </div>
+                        <h3>Delivery info</h3>
+                        <p>Country</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="20" name="country" placeholder="USA" />
+                        </div>
+                        <p>City</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="20" name="city" placeholder="New York" />
+                        </div>
+                        <p>Index</p>
+                        <div class="user__input-inf">
+                            <input type="text" maxlength="20" name="index" placeholder="10012" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Block info about user END -->
+                <!-- Block Pay START -->  
+                <div class="section__pay">
+                    <div class="pay">
+                        <h3 class="pay__title">Payment Options</h3> 
+                        <div class="pay__radio-group">
+                            <div class="pay__radio-btn">
+                                <input type="radio" name="pay" id="apple" value="Apple Pay" />
+                                <Label for="apple">Apple Pay</Label>
+                            </div>
+                            <div class="pay__radio-btn">
+                                <input type="radio" name="pay" checked id="card" value="Credit card" />
+                                <Label for="card">Credit card</Label>
+                            </div>
+                            <div class="pay__radio-btn">
+                                <input type="radio" name="pay" id="bank" value="Transfer" />
+                                <Label for="bank">Transfer</Label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Block cart START -->
+                    <div class="cart">
+                    <h3 class="cart__title">Cart</h3>
+                        <div class="cart__header">
+                            <ul class="cart__header-list">
+                                <li>Photo</li>
+                                <li>Product</li>
+                                <li>Amount</li>
+                                <li>Price</li>
+                                <li>Sum</li>
+                            </ul>
+                        </div>
+                        <div class="cart__body">
+                            <ul class="cart__body-list">
+                                <li><img class="cart__body-img" src="./img/product.png" alt="product"></li>
+                                <li>
+                                    <p>Product Name</p>
+                                </li>
+                                <li>
+                                    <div class="total__buy">
+                                        <input type="number" name="total" value="1" min="1" max="80" step="1">
+                                        <a href="#"><img src="./img/refresh.svg" alt="refresh"></a>
+                                        <a href="#"><img src="./img/delete.svg" alt="delete"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p>10, 58 USD</p>
+                                </li>
+                                <li>
+                                    <p>100 023, 58 USD</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__cart">
+                            <ul class="footer__price-list">
+                                <li>Price for one:</li>
+                                <li class="delivery__price">Delivery:</li>
+                                <li class="total__sum">Sum:</li>
+                            </ul>
+                            <ul class="footer__cart-list">
+                                <li><span>105,8 USD</span></li>
+                                <li><span>40 USD</span></li>
+                                <li><span>145,8 USD</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Block cart END -->   
+                    <!-- Block pay comment start -->
+                    <div class="comments">
+                        <div class="comments__pay">
+                            <h3 class="comments__pay-title">Payment Options</h3>
+                            <p>Additional comment</p>
+                            <textarea name="comments" placeholder="Сomment on the order here"></textarea>
+                            <div class="comments__agree-checkbox">
+                                <input type="checkbox" id="agree" onclick="agreeFunction()">
+                                <label for="agree" class="agree__text">Consent to the processing of personal data</label>
+                                <p id="text" style="opacity:0">You have consented to the processing of personal data</p>
+                            </div>
+                            <a class="pay__btn" href="#">
+                                <div class="pay__btn-element">
+                                    <p>Pay</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Block pay comment END -->
+                <!-- Block Pay END --> 
+                </div>
+            </div>
+        </section>
+        <!-- footer START -->
+        <footer>
+            <div class="wrap__footer">
+                <div class="container__footer">
+                    <div class="container__footer-inner">
+                        <div class="footer__logo-img">
+                            <img class="logo__img" src="..//HW Less_7 example BEM /img/logo.png" alt="logo">
+                        </div>
+                        <div class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li><a href="#">Our team</a></li>
+                                <li><a href="#">Сontacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="icons">
+                            <ul class="icons__list icons__list-footer">
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/facebook.png" alt="loupe"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/instagram.png" alt="user"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/youtube.png" alt="bag"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/linkedin.png" alt="bag"></a></li>
+                                <li><a href="#"><img src="../HW Less_7 example BEM /img/pinterest-social-logo.png" alt="bag"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer END -->
+        </footer>
+    </main>
+
+</body>
+
+</html>

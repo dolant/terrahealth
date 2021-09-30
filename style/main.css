@@ -1,0 +1,547 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  color: #354657;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 3.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.container > h2.title {
+  border-bottom: solid 1px #e2e2e2;
+  padding-bottom: 0.8rem;
+}
+
+/* Block auth */
+
+.auth {
+  width: 35%;
+  padding: 1rem;
+  background-color: #f0f2f5;
+}
+
+.auth .auth__title, .delivery .delivery__title {
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.auth .auth__radio-group, .delivery .delivery__radio-group, .pay .pay__radio-group {
+  display: flex;
+}
+
+.auth .auth__radio-btn {
+  margin-right: 1rem;
+}
+
+.auth .auth__radio-btn .auth__radio-btn-label {
+  font-weight: normal;
+  cursor: pointer;
+  padding: 1rem 1rem 0rem 0.2rem;
+}
+
+.auth .auth__radio-btn input{
+  cursor: pointer;
+  height: 0.85rem;
+}
+
+input[type="radio"]:after {
+  content: "";
+  width: .85rem;
+  height: .85rem;
+  border-radius: 17px;
+  appearance: none;
+  position: relative;
+  background-color: #f0f2f5;
+  display: flex;
+  border: 1px solid #946fd3;
+}
+
+input[type="radio"]:checked:after {
+  width: .85rem;
+  height: .85rem;
+  background-color: #946fd3;
+  box-shadow: inset 0 0 0 0.12rem white;
+}
+
+/* Second block users info */
+
+.user__data {
+  width: 35%;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  background-color: #f0f2f5;
+  font-weight: 700;
+}
+
+.user__data-group > p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+.user__data h3 {
+  font-size: 1rem;
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.user__data h3:first-child {
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* Style user input */
+
+.user__input-inf input {
+  width: 100%;
+  height: 1.9rem;
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 1rem;
+}
+
+input::placeholder {
+  color: #aca8a8db;
+}
+
+/* Block delivery */
+
+.delivery {
+  font-weight: 700;
+  background-color: #f0f2f5;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.delivery label {
+  font-weight: normal;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0rem 1rem 0rem 0.2rem;
+}
+
+.delivery input {
+  cursor: pointer;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.section__delivery {
+  margin-left: 1.5rem;
+  width: 65%;
+}
+
+.section__info {
+  display: flex;
+}
+
+/* Block Pay */
+
+.pay {
+  font-weight: 700;
+  background-color: #f0f2f5;
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.pay h3 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.pay__radio-btn label {
+  font-weight: normal;
+  cursor: pointer;
+  padding: 1rem 1rem 0rem 0.2rem;
+}
+
+.pay__radio-group input {
+  cursor: pointer;
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+.section__pay {
+  margin-left:  1.5rem;
+  width: 65%;
+}
+
+/* Cart */
+
+.cart__title {
+  margin-top: 1.5rem;
+  margin-bottom: .75rem;
+}
+
+.cart__header {
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #f0f2f5;
+  font-weight: 700;
+}
+
+.cart__header li {
+  display: flex;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.cart__header li:last-child {
+  padding-right: 4rem;
+}
+
+.cart__header li:nth-of-type(4) {
+  padding-left: 0rem;
+}
+
+.cart__header ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__pay > p {
+  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+/* Cart body */
+
+.cart__body ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0;
+}
+
+.body__cart li {
+  list-style-type: none;
+}
+
+.total__buy {
+  align-items: center;
+  display: flex;
+}
+
+.cart__body input {
+  width: 2.7rem;
+  height: 1.9rem;
+  border: 3px solid #e9e9e9;
+  border-radius: 5px;
+  padding-left: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: inline-block;
+  outline: none;
+}
+
+.total__buy a {
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-top: 0.1rem;
+}
+
+.total__buy img {
+  width: 1.65rem;
+}
+
+.cart__body li:nth-of-type(1) {
+  padding-left: 1rem;
+}
+
+.cart__body li:nth-of-type(2) {
+  padding-left: 1.2rem;
+}
+
+.cart__body li:nth-of-type(4) {
+  padding-right: .6rem;
+}
+
+.cart__body li:last-child {
+  padding-right: 1.3rem;
+}
+
+/* Cart footer*/
+
+.footer__cart {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.footer__cart  {
+  text-align: right;
+  padding: 0;
+}
+
+.footer__cart-list {
+  text-align: left;
+  padding: 0;
+}
+
+.footer__price-list li:nth-of-type(2) {
+  padding-left: 5rem;
+}
+
+.footer__cart li {
+  height: 2.35rem;
+  padding-top: 0.7rem;
+}
+
+.footer__cart span {
+  font-size: 0.8rem;
+  font-weight: normal;
+  padding-left: .7rem;
+  padding-right: 2.7rem;
+}
+
+.footer__cart li:nth-of-type(2) {
+  background-color: #fafafa;
+}
+
+.delivery__price span {
+  padding-left: 0.9rem;
+  padding-right: 2.8rem;
+}
+
+.total__sum span {
+  padding-left: 0.9rem;
+}
+
+/* Comments */
+
+.comments__pay {
+  background-color: #f0f2f5;
+  padding: 1rem;
+}
+
+.comments__pay .comments__pay-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.comments__pay p {
+  font-weight: 400;
+  font-size: .8rem;
+  margin: 0;
+  padding-top: .75rem;
+  padding-bottom: .5rem;
+}
+
+.comments__pay label  {
+  font-size: .8rem;
+}
+
+.comments__pay textarea {
+  display: flex;
+  overflow: hidden;
+  border: 1px solid #b6b6b6;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1.5px rgb(0 0 0 / 50%);
+  padding: 1rem;
+  width: 100%;
+  resize:none;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.pay__btn .pay__btn-element p {
+  font-size: .8rem;
+  font-weight: 700;
+  color: white;
+  padding: .5rem 0 .5rem 0;
+  text-align: center;
+}
+
+.pay__btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pay__btn .pay__btn-element {
+  width: 5rem;
+  background-color: #946FD3;
+  border-radius: 50px;
+  border: none;
+}
+
+/* block header */
+
+.wrap__header {
+  background-color: #F8F4FC;
+  padding: 0;
+  display: flex;
+}
+
+.container__header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header__logo-img .logo__img {
+  width: 90%;
+  margin: .5rem 0 .5rem;
+}
+
+.header__nav-list, .header__nav___visual-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.header__nav___visual-list {
+  margin-bottom: .8rem;
+  font-size: .7rem;
+}
+
+.header__nav___visual-list li {
+  padding-right: .5rem;
+}
+
+.container__header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__nav {
+  margin-top: 1.2rem;
+  margin-left: 1rem;
+}
+
+.header__nav .header__nav-list a {
+  padding-right: 2.5rem;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #354657;
+}
+
+.header__nav-visual .header__nav___visual-list a:hover {
+  text-decoration: underline;
+}
+
+.header__nav .header__nav-list a:hover {
+  color: #946fd3;
+} 
+
+.header__nav-visual .header__nav___visual-list a {
+  color: #626262;
+}
+
+.nav__visual-arrow {
+  padding-bottom: .1rem;
+}
+
+.icons__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.icons__list a {
+  margin-right: 2rem;
+}
+
+.icons__list li:nth-of-type(3) a {
+  margin-right: 0;
+}
+
+/* blok footer */
+
+.wrap__footer {
+  background-color: #ffff;
+  padding: 0;
+  display: flex;
+}
+
+.container__footer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer__logo-img .logo__img {
+  width: 90%;
+  margin: .5rem 0 .5rem;
+}
+
+.footer__nav {
+  margin-top: 1.2rem;
+  margin-right: 14rem;
+}
+
+.container__footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: .7rem;
+}
+
+.footer__nav .footer__nav-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__nav .footer__nav-list a {
+  margin-right: 2rem;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #354657;
+}
+
+.icons__list-footer li:nth-of-type(3) a {
+  margin-right: .85rem;
+}
+
+.icons__list-footer li:nth-of-type(5) a {
+  margin-right: 0;
+}
+
+.icons__list-footer a {
+  margin-right: .85rem;
+}
+
+.wrap__footer {
+  margin-top: 7.5rem;
+  border-top: 1px solid #E2E2E2;
+}
+
