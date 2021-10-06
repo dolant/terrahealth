@@ -394,12 +394,11 @@ input::placeholder {
 
 .pay__btn {
   text-decoration: none;
-  display: flex;
-  justify-content: flex-end;
+  width: 5rem;
+  display: inline-block;
 }
 
-.pay__btn .pay__btn-element {
-  width: 5rem;
+.pay__btn-element {
   background-color: #946FD3;
   border-radius: 50px;
   border: none;
